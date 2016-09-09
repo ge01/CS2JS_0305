@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <title>Change Counter</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap 3 is mobile-first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!---->
+    <div class="container">
+      <h2>Change Counter</h2>
+      <form>
+        <div class="form-group">
+          <label for="fiveCents">Jefferson = 5 cents:</label>
+          <input id="fiveCents" type="number" onclick="computeChange" placeholder="How many nickles" />
+        </div>
+        <div class="form-group">
+          <label for="tenCents">Roosevelt = 10 cents:</label>
+          <input id="tenCents" type="number" onclick="computeChange" placeholder="How many dimes" />
+        </div>
+        <div class="form-group">
+          <label for="twentyfiveCents">Washington = 25 cents:</label>
+          <input id="twentyfiveCents" type="number" onclick="computeChange" placeholder="How many quarters" />
+        </div>
+        <div class="form-group">
+          <label for="fiftyCents">Kennedy = 50 cents:</label>
+          <input id="fiftyCents" type="number" onclick="computeChange" placeholder="How many half-dollars" />
+        </div>
+        <button id="myBtn" type="button" class="btn btn-default">Calculate Change</button>
+      </form>
+    </div>
+
+    <h2 id="outTotalChange"></h2>
+
+    <!-- NOTE: This tag connects the JS to our HTML-->
+    <script src="app.js"></script>
+  </body>
+</html>
