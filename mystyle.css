@@ -1,0 +1,10 @@
+.col-sm-6 {
+  border-style: solid;
+  border-color: blue;
+  padding-bottom: 15px;
+}
+.col-md-6 {
+  border-style: solid;
+  border-color: red;
+}
+/*http://www.w3schools.com/css/css_boxmodel.asp*/
